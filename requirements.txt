@@ -1,0 +1,4 @@
+streamlit
+matplotib
+numpy
+time
