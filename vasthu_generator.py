@@ -4,7 +4,7 @@ import numpy as np
 import time
 
 # --- 1. CONFIGURATION & VASTU RULES (Cacheable Resources) ---
-
+st.set_page_config(page_title="e.VastuLeap Plan Generator", layout="wide")
 # @st.cache_resource is typically used for ML models/heavy objects, but can be used 
 # here to ensure constants are loaded only once, improving app startup time slightly.
 @st.cache_resource
@@ -124,7 +124,7 @@ def main():
     if 'last_run' not in st.session_state:
         st.session_state['last_run'] = False
     
-    st.set_page_config(page_title="e.VastuLeap Plan Generator", layout="wide")
+   
     st.title("e.VastuLeap: Rule-Based Vastu Plan Generator 🏠")
     st.markdown("Enter your plot dimensions and requirements to generate Vastu-compliant layout options using algorithmic principles.")
     st.divider()
